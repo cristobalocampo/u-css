@@ -1,75 +1,101 @@
 /* Practice Layout */
 
+*{
+  border: 1px dotted;
+}
+
 .mdl-layout__content {
   height: 100%;
 }
 
-.page-content {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
 .solution {
-  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-}
-
-.footer {
-  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #C8C8C8;
 }
 
 .solution-title {
   background-color: #E8E8E8;
 }
 
-.solution-title h4{
+.solution-title h4 {
+  font-size: 22px;
+  line-height: 62px;
+  margin: 0;
+  width: 100%;
+  margin-left: 10px;
+}
+
+article h1 {
   font-size: 20px;
   color: #787878;
   margin: 0;
 }
 
-.solution-nav{
+.solution-nav {
   background-color: #DCDCDC;
 }
 
-.solution-nav ul{
+.solution-nav ul {
   display: inline-block;
   list-style: none;
   padding: 0;
+  margin: 8px 25px;
 }
 
-.solution-nav li{
+.solution-nav li {
   float: left;
   margin: 0 15px;
   padding: 0;
 }
 
-.solution-nav a{
+.solution-nav a {
   text-decoration: none;
 }
 
-.search-sidebar{
+.search-sidebar {
+  box-sizing: border-box;
   float: none;
   width: 100%;
+  background-color: #E8E8E8;
+  padding: 10px;
 }
 
-.solution-article{
+.solution-article {
+  box-sizing: border-box;
   float: none;
   width: 100%;
+  padding: 10px;
+  background-color: #C8C8C8;
 }
 
 @media only screen and (min-width: 740px) {
-  .search-sidebar{
+  .search-sidebar {
     float: left;
     width: 30%;
   }
 
-  .solution-article{
+  .solution-article {
     float: right;
     width: 70%;
   }
 }
 
-.footer{
+.footer {
   clear: both;
+  background-color: white;
+}
+
+.search-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.search-form #search {
+  display: block;
+  border: none;
+  border-radius: 4px;
+  height: 20px;
+  width: 100%;
+  margin-bottom: 25px;
 }
